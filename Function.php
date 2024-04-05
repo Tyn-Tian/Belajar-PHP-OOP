@@ -9,3 +9,6 @@ $tyn->sayHello("Christian");
 $budi = new Person();
 $budi->name = "Budi";
 $budi->sayHello(null);
+
+$tyn->info();
+$budi->info();
