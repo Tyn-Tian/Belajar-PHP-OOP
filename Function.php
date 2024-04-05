@@ -2,6 +2,10 @@
 
 require_once "data/Person.php";
 
-$person = new Person();
+$tyn = new Person();
+$tyn->name = "Tyn";
+$tyn->sayHello("Christian");
 
-$person->sayHello("Christian");
+$budi = new Person();
+$budi->name = "Budi";
+$budi->sayHello(null);
