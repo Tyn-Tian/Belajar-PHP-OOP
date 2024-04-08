@@ -49,18 +49,21 @@ class ParentPerson
     }
 }
 
-class Person extends ParentPerson
+trait All 
 {
     use SayGoodBye, SayHello, HasName, canRun {
         // Visibility bisa diprivate
         // hello as private;
         // goodBye as private;
     }
+}
+
+class Person extends ParentPerson
+{
+    use All;
 
     public function run(): void
     {
         echo "Person $this->name is Running" . PHP_EOL;
     }
-
-    
 }
